@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+#butt1{
+
+    border: 5px solid black;
+    border-radius: 3px;
+    padding: 20px;
+    width: 310px;        
+    
+}
+h1{
+    
+    background-color: blue;
+    color: beige;
+    padding: 20px;
+    width: 300px;
+}
+input{
+    width: 20px;
+    background-color: blueviolet;
+    padding: 36px;
+}
+#clear{
+    background-color: red;
+    padding: 20px;
+    border: 5px solid black;
+    width: 325px;
+    
+}
+#form{
+   
+}
