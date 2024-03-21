@@ -7,40 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CALCULATOR</h1>
-    <div class="form">
-        <form >
-        <input id="butt1" type="text" name="Answer">
-        <br> <br>
-        <input type="button" value="1" onclick="form.answer.value +='1'">
-        <input type="button" value="2" onclick="form.answer.value +='2'">
-        <input type="button" value="3" onclick="form.answer.value +='3'">
-        <input type="button" value="+" onclick="form.answervalue +='+'">
-        <br>
-        <br>
-        <input type="button" value="4" onclick="form.answer.value +='4'">
-        <input type="button" value="5" onclick="form.answer.value +='5'">
-        <input type="button" value="6" onclick="form.answer.value +='6'">
-        <input type="button" value="-" onclick="form.answer.value +='-'">
-        <br>
-        <br>
-        <input type="button" value="7" onclick="form.answer.value +='7'">
-        <input type="button" value="8" onclick="form.answer.value +='8'">
-        <input type="button" value="9" onclick="form.answer.value +='9'">
-        <input type="button" value="*" onclick="form.answer.value +='-'">
-        <br>
-        <br>
-        <input type="button" value="/" onclick="form.answer.value +='/'">
-        <input type="button" value="0" onclick="form.answer.value +='.'">
-        <input type="button" value="=" onclick="form.answer.value =  eval(form.answer.value)">
-        <br> <br>
-
-        <input type="button" value="clear all" onclick="form.answer.value =''" id="clear">
-        <br> <br>
-        <script type="text/javascript" src="script.js"></script>
-
-
-
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+            <div class="buttons">
+                <button onclick="appendToDisplay('(')">(</button>
+                <button onclick="appendToDisplay(')')">)</button>
+                <button onclick="clearlastElement('()')">CE</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="appendToDisplay('+')">+</button>
+            </div>
+        </div>
+    </div>
    </form>
     </div>
     

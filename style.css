@@ -1,32 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-#butt1{
 
-    border: 5px solid black;
-    border-radius: 3px;
-    padding: 20px;
-    width: 310px;        
-    
-}
-h1{
-    
-    background-color: blue;
-    color: beige;
-    padding: 20px;
+.calculator{
     width: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px black;
 }
-input{
-    width: 20px;
-    background-color: blueviolet;
-    padding: 36px;
+.display{
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    background-color: beige;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: auto;
 }
-#clear{
-    background-color: red;
-    padding: 20px;
-    border: 5px solid black;
-    width: 325px;
+.button{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 5px;
     
 }
-#form{
-   
+button{
+    cursor: pointer;
+    background-color: bisque;
+    height: 80px;
+    width: 70px;
+    font-size: 25px;
+    border: none;
+    
+    
+}
+button:hover{
+    background-color: azure;
 }
