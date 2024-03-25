@@ -1,59 +1,35 @@
-
-//Initializing variable to store current display
-let currentDisplay = "0";
-let resultDisplay = false;
-//function to append the value to the current display
-
 function appendToDisplay(value){
-    if (currentDisplay === "0" || resultDisplay){
-
+    const element = document.getElementById("display");
+    if (element == null) return; // Should never happen, but just in case...
+    if (element.textContent ==="0"){
+        element.textContent = value;
+    } else {
+       element.textContent += value;
     
-}else{
-    currentDisplay += value;
+    }
 }
-resultDisplay = false;
-updateDisplay();
-}
-///function to update  the calculator display with the current content
-function updateDisplay(){
-    const displayElement = documents.getElementById("display");
-    displayElement.textContent = currentDisplay;
-
-}
-///function to culculate and display the result
-function calculateResults(){
-    const result = eval(currentDisplay)
-    //apend the results to the current display preceded by an equal sign
-    currentDisplay += "\n=" + result.toString();
-
-//update the culculator display with results
-updateDisplay();
-} expected(error) {
-    currentDisplay += "\nError";
-    updateDisplay();
-}
-resultDisplay = true;
-
-
-///function to clear the last element from the current display
-
-function clearLastElement(){
-    currentDisplay = currentDisplay.slice(0, -1)
-    //if the current display becomes empty, set it back to 0
-    if (currentDisplay ==="") {
-        currentDisplay = "0";
+function clearlastElement(){
+    const element = document.getElementById("display");
+    const content = element.textContent;
+    if (content.length == 0) return;
+    element.textContent = element.textContent.substring(0, display.length -1);
+    if (content.length == 1) {
+        element.textContent = "0";
+    } else {
+        // remove the last character of content
+        element.textContent = content.slice(0,-1);
     }
 
-//update the calculator display to reflect the changes
 
-updateDisplay();
 }
-
-///function to clear the entire display
 function clearDisplay(){
-    currentDisplay = "0";
-    
-    updateDisplay();
+    const element = document.getElementById("display");
+    const content = element.textContent;
+    element.textContent = element.textContent.substring(0, display.length -1);
+    if (content.length == 1) {
+        element.textContent = "0";
+
+
 }
-window.addEventListener("resize", handleOverflow);
-handleOverflow;
+}
+
