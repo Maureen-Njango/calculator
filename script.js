@@ -78,7 +78,6 @@ function subtract(a, b) {
 
 function divide(a, b) {
     //  Check for division by zero error
-    // for now, return zero. in future, through an exception or error message
     if (b === 0) return 0;
     return a / b;
 }
